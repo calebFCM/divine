@@ -43,8 +43,7 @@ const styles = StyleSheet.create({
    },
    buttonText: {
      color: COLORS.white,
-     fontSize: 16,
-     fontWeight: 'bold',
+     fontSize: SIZES.small,
      textTransform: 'uppercase'
    },
    agentLink: {

@@ -12,9 +12,9 @@ const styles = StyleSheet.create({
       color: COLORS.underline,
       fontSize: SIZES.xLarge,
       fontWeight: 'bold', 
-      marginBottom: 20,
     },
     balanceCardsContainer: {
+      marginTop: 20,
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
@@ -31,9 +31,10 @@ const styles = StyleSheet.create({
     },
     card: {
       backgroundColor: COLORS.white,
-      borderRadius: 20,
-      padding: 20,
-      width: 150,
+      borderRadius: 15,
+      paddingVertical: 15,
+      paddingHorizontal: 15,
+      width: 125,
       shadowColor: '#000',
       margin: 10,
       shadowOffset: {
@@ -45,15 +46,14 @@ const styles = StyleSheet.create({
       elevation: 5,
     },
     icon: {
-      marginBottom: 10,
-      marginLeft: -10,
+      width: 25,
+      height: 25,
     },
     smallText: {
-      fontSize: 14,
-      marginBottom: 5,
+      fontSize: SIZES.xSmall,
     },
     largeText: {
-      fontSize: 20,
+      fontSize: SIZES.medium,
       fontWeight: 'bold',
     },
     balancesButton: {
@@ -61,9 +61,8 @@ const styles = StyleSheet.create({
       marginBottom: 30,
       backgroundColor: '#27bbb5',
       paddingVertical: 12,
-      marginLeft: 40,
-      marginRight: 40,
       borderRadius: 8,
+      margin: 90,
       justifyContent: 'center',
       alignItems: 'center',
       shadowColor: '#000',
@@ -77,8 +76,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
       color: 'white',
-      fontSize: 16,
-      fontWeight: 'bold',
+      fontSize: SIZES.small,
     },
 });
 

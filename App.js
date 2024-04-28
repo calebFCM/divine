@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
 import OtpScreen from './screens/OtpScreen/OtpScreen';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
+import AirtimeScreen from './screens/HomeScreen/AirtimeScreen';
 import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
 import AgentLoginScreen from './screens/LoginScreen/AgentLoginScreen';
 import AgentApplicationScreen from './screens/AgentApplicationScreen/AgentApplicationScreen';
@@ -22,11 +23,12 @@ const App = () => {
         screenOptions={{ headerShown: false }}>
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="OtpScreen" component={OtpScreen} />
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
         <Stack.Screen name="AgentLoginScreen" component={AgentLoginScreen} />
         <Stack.Screen name="AgentApplicationScreen" component={AgentApplicationScreen} />
         <Stack.Screen name="SimApplicationScreen" component={SimApplicationScreen} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="AirtimeScreen" component={AirtimeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
