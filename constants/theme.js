@@ -1,5 +1,6 @@
 const COLORS = {
   background: "#F9FAFF",
+  altBG: "#f4f4f4",
 
   themeGreen: "#1a9d9b",
   headingGreen: "#aadbda",

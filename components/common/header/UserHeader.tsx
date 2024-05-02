@@ -1,12 +1,19 @@
 import React from 'react';
 import { View, Image, Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { icons } from '@/constants';
+
+import { useNavigation } from '@react-navigation/native'; 
 
 import { FontAwesome6 } from '@expo/vector-icons'; 
 import styles from '@/components/common/header/userheader.style';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const UserHeader = () => {
+
+  
+  const navigation = useNavigation(); 
   return (
 
    <SafeAreaView style={styles.container}>
@@ -20,7 +27,10 @@ const UserHeader = () => {
         <Text style={styles.phoneNumber}>071 190 5625</Text>
 
         {/* Shopping basket icon */}
-        <FontAwesome6 name="basket-shopping" size={24} color="white" />
+        <TouchableOpacity onPress={() => navigation.navigate('CartScreen')}>
+          <Image source={icons.basket} style={styles.icon} />
+        </TouchableOpacity>
+        
       </View>
       
    </SafeAreaView>

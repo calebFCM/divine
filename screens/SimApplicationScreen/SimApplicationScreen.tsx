@@ -18,7 +18,7 @@ export default function SimApplicationScreen() {
     
       <SimApplicationHeader/>
       <SimApplicationHeading/>
-      <SimApplicationPaymentForm/>
+      {/* <SimApplicationPaymentForm/> */}
       
     </LinearGradient>
   </View>

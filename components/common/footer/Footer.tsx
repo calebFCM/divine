@@ -13,7 +13,7 @@ const Footer = ({ activeScreen }) => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.iconContainer} onPress={() => navigateToScreen('HomeScreen')}>
+      <TouchableOpacity style={styles.iconContainer} onPress={() => navigation.navigate('HomeScreen')}>
         <MaterialIcons
           name="home-filled"
           size={24}
@@ -23,7 +23,7 @@ const Footer = ({ activeScreen }) => {
           Home
         </Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.iconContainer} onPress={() => navigateToScreen('Profile')}>
+      <TouchableOpacity style={styles.iconContainer} onPress={() => navigation.navigate('ProfileScreen')}>
         <FontAwesome5
           name="user-circle"
           size={24}
@@ -33,7 +33,7 @@ const Footer = ({ activeScreen }) => {
           Profile
         </Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.iconContainer} onPress={() => navigateToScreen('Menu')}>
+      <TouchableOpacity style={styles.iconContainer} onPress={() => navigation.navigate('Menu')}>
         <Ionicons
           name="menu-outline"
           size={24}

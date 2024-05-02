@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
    phoneNumber: {
      color: COLORS.white,
      fontSize: 16,
-   }
+   },
+   icon: {
+     width: 25,
+     height: 30,
+   },
 });
 export default styles;

@@ -1,0 +1,26 @@
+import React from 'react';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { COLORS } from '@/constants';
+import styles from './email.style';
+
+const Email = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.heading}>Email Address</Text>
+      <Text style={styles.subheading}>Enter a new email address</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="John@gmail.com"
+        placeholderTextColor={COLORS.gray}
+        keyboardType="email-address"
+        autoCapitalize="none"
+        autoCompleteType="email"
+      />
+      <TouchableOpacity style={styles.buttonContainer}>
+        <Text style={styles.buttonText}>Save</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+export default Email;

@@ -18,17 +18,20 @@ const Purchases = () => {
                <Image source={icons.airtimeBlack} style={styles.icon} />
                <Text style={styles.cardText}>Airtime</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.card}>
+            <TouchableOpacity onPress={() => navigation.navigate('DataScreen')} 
+              style={styles.card}>
                <Image source={icons.dataBlack} style={styles.icon} />
                <Text style={styles.cardText}>Data</Text>
             </TouchableOpacity>
          </View>
          <View style={styles.bottomCards}>
-            <TouchableOpacity style={styles.card}>
+            <TouchableOpacity onPress={() => navigation.navigate('VoiceScreen')}
+            style={styles.card}>
                <Image source={icons.voiceBlack} style={styles.icon} />
                <Text style={styles.cardText}>Voice</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.card}>
+            <TouchableOpacity onPress={() => navigation.navigate('SocialScreen')}
+            style={styles.card}>
                <Image source={icons.socialBlack} style={styles.icon} />
                <Text style={styles.cardText}>Social</Text>
             </TouchableOpacity>

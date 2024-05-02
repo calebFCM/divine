@@ -4,14 +4,32 @@ import 'react-native-gesture-handler';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
 import LoginScreen from './screens/LoginScreen/LoginScreen';
 import OtpScreen from './screens/OtpScreen/OtpScreen';
-import HomeScreen from './screens/HomeScreen/HomeScreen';
-import AirtimeScreen from './screens/HomeScreen/AirtimeScreen';
-import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
 import AgentLoginScreen from './screens/LoginScreen/AgentLoginScreen';
 import AgentApplicationScreen from './screens/AgentApplicationScreen/AgentApplicationScreen';
 import SimApplicationScreen from './screens/SimApplicationScreen/SimApplicationScreen';
+
+import HomeScreen from './screens/HomeScreen/HomeScreen';
+import AirtimeScreen from './screens/HomeScreen/AirtimeScreen';
+import DataScreen from './screens/HomeScreen/DataScreen';
+import DataSelectedScreen from './screens/HomeScreen/DataSelectedScreen';
+import VoiceScreen from './screens/HomeScreen/VoiceScreen';
+import VoiceSelectedScreen from './screens/HomeScreen/VoiceSelectedScreen';
+import SocialScreen from './screens/HomeScreen/SocialScreen';
+import SocialSelectedScreen from './screens/HomeScreen/SocialSelectedScreen';
+import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
+
+import CartScreen from './screens/CartScreen/CartScreen';
+import PaymentScreen from './screens/CartScreen/PaymentScreen';
+import PaymentOutcomeScreen from './screens/CartScreen/PaymentOutcomeScreen';
+
+import ProfileScreen from './screens/ProfileScreen/ProfileScreen';
+import EmailAddressScreen from './screens/ProfileScreen/EmailAddressScreen';
+import MyNumberScreen from './screens/ProfileScreen/MyNumberScreen';
+
+
 
 const Stack = createStackNavigator();
 
@@ -29,6 +47,18 @@ const App = () => {
         <Stack.Screen name="SimApplicationScreen" component={SimApplicationScreen} />
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="AirtimeScreen" component={AirtimeScreen} />
+        <Stack.Screen name="DataScreen" component={DataScreen} />
+        <Stack.Screen name="DataSelectedScreen" component={DataSelectedScreen} />
+        <Stack.Screen name="VoiceScreen" component={VoiceScreen} />
+        <Stack.Screen name="VoiceSelectedScreen" component={VoiceSelectedScreen} />
+        <Stack.Screen name="SocialScreen" component={SocialScreen} />
+        <Stack.Screen name="SocialSelectedScreen" component={SocialSelectedScreen} />
+        <Stack.Screen name="CartScreen" component={CartScreen} />
+        <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
+        <Stack.Screen name="PaymentOutcomeScreen" component={PaymentOutcomeScreen} />
+        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+        <Stack.Screen name="EmailAddressScreen" component={EmailAddressScreen} />
+        <Stack.Screen name="MyNumberScreen" component={MyNumberScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

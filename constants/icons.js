@@ -4,6 +4,7 @@ import voiceBlack from '@/assets/icons/voiceBlack.png';
 import socialBlack from '@/assets/icons/socialBlack.png';
 import flash from '@/assets/icons/flash.png';
 import blu from '@/assets/icons/blu.png';
+import basket from '@/assets/icons/basket.png';
 
 export default {
   airtimeBlack,
@@ -12,4 +13,5 @@ export default {
   socialBlack,
   blu,
   flash,
+  basket
 };
