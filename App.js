@@ -28,6 +28,7 @@ import PaymentOutcomeScreen from './screens/CartScreen/PaymentOutcomeScreen';
 import ProfileScreen from './screens/ProfileScreen/ProfileScreen';
 import EmailAddressScreen from './screens/ProfileScreen/EmailAddressScreen';
 import MyNumberScreen from './screens/ProfileScreen/MyNumberScreen';
+import NumberListScreen from './screens/ProfileScreen/NumberListScreen';
 
 
 
@@ -59,6 +60,7 @@ const App = () => {
         <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
         <Stack.Screen name="EmailAddressScreen" component={EmailAddressScreen} />
         <Stack.Screen name="MyNumberScreen" component={MyNumberScreen} />
+        <Stack.Screen name="NumberListScreen" component={NumberListScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

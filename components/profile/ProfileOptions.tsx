@@ -32,7 +32,8 @@ const ProfileOptions = () => {
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.optionContainer}>
+      <TouchableOpacity onPress={() => navigation.navigate('NumberListScreen')}
+      style={styles.optionContainer}>
         <View style={styles.content}>
           <View>
             <Text style={styles.heading}>Phone Number List</Text>
