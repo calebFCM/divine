@@ -2,8 +2,11 @@ import React from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { COLORS } from '@/constants';
 import styles from './mynumber.style';
+import { useNavigation } from '@react-navigation/native';
 
 const MyNumber = () => {
+
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>My number </Text>
@@ -14,7 +17,8 @@ const MyNumber = () => {
         placeholderTextColor={COLORS.gray}
         keyboardType="numeric"
       />
-      <TouchableOpacity style={styles.buttonContainer}>
+      <TouchableOpacity onPress={() => navigation.navigate('ProfileScreen')}
+      style={styles.buttonContainer}>
         <Text style={styles.buttonText}>Save</Text>
       </TouchableOpacity>
 

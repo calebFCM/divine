@@ -7,9 +7,6 @@ import styles from './footer.style';
 const Footer = ({ activeScreen }) => {
   const navigation = useNavigation();
 
-  const navigateToScreen = (HomeScreen) => {
-    navigation.navigate(HomeScreen);
-  };
 
   return (
     <View style={styles.container}>
@@ -33,7 +30,7 @@ const Footer = ({ activeScreen }) => {
           Profile
         </Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.iconContainer} onPress={() => navigation.navigate('Menu')}>
+      <TouchableOpacity style={styles.iconContainer} onPress={() => navigation.navigate('MenuScreen')}>
         <Ionicons
           name="menu-outline"
           size={24}

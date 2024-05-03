@@ -5,8 +5,11 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { COLORS, SIZES } from '@/constants';
 import styles from './numberlist.style';
+import { useNavigation } from '@react-navigation/native';
 
 const NumberList = () => {
+
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>My phone number list</Text>
@@ -37,9 +40,12 @@ const NumberList = () => {
           <FontAwesome5 name="user-friends" size={24} style={styles.icon} />
         </TouchableOpacity>
       </View>
-      <TouchableOpacity style={styles.buttonContainer}>
+
+      <TouchableOpacity onPress={() => navigation.navigate('ProfileScreen')}
+      style={styles.buttonContainer}>
         <Text style={styles.buttonText}>ENTER</Text>
       </TouchableOpacity>
+
       <TouchableOpacity style={styles.underlineButton}>
         <Text style={styles.underlineButtonText}>Add another Divine number</Text>
       </TouchableOpacity>

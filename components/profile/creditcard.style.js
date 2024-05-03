@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: 10,
     marginBottom: 40,
-    paddingBottom: '80%',
+    paddingBottom: '35%',
     marginHorizontal: 20,
     borderRadius: 8,
     shadowColor: COLORS.black,
@@ -25,10 +25,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
   },
-  subheading: {
+  label: {
     fontSize: SIZES.medium,
     color: COLORS.lightGray,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   input: {
     borderWidth: 1,
@@ -36,6 +36,25 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 10,
     marginBottom: 20,
+    fontSize: SIZES.medium,
+    color: COLORS.black,
+  },
+  inlineContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
+  inlineItem: {
+    flex: 1,
+  },
+  cvv: {
+    marginLeft: 40,
+  },
+  inlineInput: {
+    borderWidth: 1,
+    borderColor: COLORS.lightGray,
+    borderRadius: 8,
+    padding: 10,
     fontSize: SIZES.medium,
     color: COLORS.black,
   },

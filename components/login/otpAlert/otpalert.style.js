@@ -15,15 +15,15 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
     },
     circleContainer: {
-      alignContent: "center",
+      backgroundColor: COLORS.white,
+      borderRadius: 8,
       flexDirection: 'row',
       justifyContent: 'space-between',
-      marginTop: 20,
-      paddingHorizontal: 33,
+      alignItems: 'center',
+      marginTop: 30,
+      paddingHorizontal: 20,
       paddingVertical: 20,
-      backgroundColor: COLORS.white,
-      borderRadius: 10,
-      alignSelf: "center"
+      alignItems: 'center',
     },
     circle: {
       width: 57,

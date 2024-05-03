@@ -42,7 +42,9 @@ const ProfileOptions = () => {
           <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.optionContainer}>
+
+      <TouchableOpacity onPress={() => navigation.navigate('PasswordScreen')}
+      style={styles.optionContainer}>
         <View style={styles.content}>
           <View>
             <Text style={styles.heading}>Password</Text>
@@ -51,7 +53,9 @@ const ProfileOptions = () => {
           <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.optionContainer}>
+
+      <TouchableOpacity onPress={() => navigation.navigate('CreditCardScreen')}
+      style={styles.optionContainer}>
         <View style={styles.content}>
           <View>
             <Text style={styles.heading}>Payment details</Text>
@@ -60,6 +64,7 @@ const ProfileOptions = () => {
           <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
         </View>
       </TouchableOpacity>
+      
     </View>
   );
 };
