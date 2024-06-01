@@ -5,7 +5,7 @@ import { COLORS, SIZES } from "../../../constants";
 const styles = StyleSheet.create({
 
    container: {
-      backgroundColor: COLORS.themeGreen,
+      backgroundColor: COLORS.themeRed,
       paddingHorizontal: 10,
     },
     headerContainer: {

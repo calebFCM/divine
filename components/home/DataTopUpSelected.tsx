@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, TextInput  } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'; 
-import styles from '@/components/home/datatopup.style';
+import styles from '@/components/home/datatopupselected.style';
 import { COLORS, FONT, SIZES } from "@/constants";
 import ChooseNumber from './ChooseNumber';
 
@@ -39,7 +39,19 @@ const DataTopupSelected = () => {
         </View>
       </TouchableOpacity>
 
-      <ChooseNumber/>
+      {/* Additional Text */}
+      <View style={styles.additionalTextContainer}>
+        <Text style={styles.additionalTextLeft}>For number</Text>
+        <Text style={styles.additionalTextRight}>072 345 6789</Text>
+      </View>
+
+      {/* Add to Basket Button */}
+      <TouchableOpacity
+        onPress={() => console.log('Add to basket pressed')}
+        style={styles.buttonContainer}
+      >
+        <Text style={styles.buttonText}>Add to Basket</Text>
+      </TouchableOpacity>
       
     </View>
   );

@@ -14,7 +14,7 @@ const PaymentOutcome = () => {
     <View style={styles.container}>
       {/* Big Check Icon */}
       <FontAwesome5 style={styles.icon}
-         name="check-circle" color={COLORS.textGreen} />
+         name="check-circle" color={COLORS.themeRed} />
       {/* Payment Successful Text */}
       <Text style={styles.text}>Payment Successful</Text>
     </View>

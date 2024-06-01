@@ -4,6 +4,7 @@ import { COLORS, FONT, SIZES } from "@/constants";
 const styles = StyleSheet.create({
    OtpScreencontainer: {
       flex: 1,
+      backgroundColor: COLORS.background
    },
 
    gradient: {

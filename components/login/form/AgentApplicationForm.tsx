@@ -14,7 +14,7 @@ const AgentApplicationForm = () => {
       {/* Continue Button */}
       <TouchableOpacity 
          style={styles.buttonContainer}
-         onPress={() => navigation.navigate('SimApplicationScreen')}>
+         onPress={() => navigation.navigate('SimApplicationPaymentScreen')}>
         <Text style={styles.buttonText}>start new sim application</Text>
       </TouchableOpacity>
       

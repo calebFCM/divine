@@ -15,8 +15,8 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
     },
     circleContainer: {
-      backgroundColor: COLORS.white,
-      borderRadius: 8,
+      backgroundColor: COLORS.lightGray,
+      borderRadius: 18,
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -38,11 +38,12 @@ const styles = StyleSheet.create({
       fontSize: SIZES.large,
     },
     resendText: {
+      textAlign: 'center',
       fontSize: SIZES.medium,
       marginTop: 15,
     },
     resendLink: {
-      color: COLORS.underline,
+      color: COLORS.themeRed,
       textDecorationLine: 'underline', 
     },
 

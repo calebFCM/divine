@@ -14,13 +14,42 @@ const styles = StyleSheet.create({
     marginBottom: 13,
   },
   icon: {
-    color: COLORS.underline,
+    color: COLORS.text,
   },
   headingText: {
     fontSize: SIZES.large,
     fontWeight: 'bold',
-    color: COLORS.underline,
+    color: COLORS.text,
     marginLeft: 8,
+  },
+  payingWithText: {
+    fontSize: SIZES.small,
+    fontWeight: 'bold',
+    color: COLORS.text,
+  },
+  dropDownContainer: {
+    borderBottomWidth: 1,
+    borderColor: COLORS.text,
+    borderRadius: 8,
+    marginTop: 10,
+    marginBottom: 20,
+  },
+  availableContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginHorizontal: 15,
+  },
+  availableLabel: {
+    fontSize: SIZES.large,
+    color: COLORS.gray,
+    textAlign: 'left',
+  },
+  availableAmount: {
+    fontWeight: 'bold',
+    fontSize: SIZES.large,
+    color: COLORS.text,
+    textAlign: 'right',
+    marginBottom: 10,
   },
   whiteBox: {
     backgroundColor: COLORS.white,
@@ -67,11 +96,6 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.transparent,
     marginTop: 20,
   },
-  payingWithText: {
-    fontSize: SIZES.medium,
-    fontWeight: 'bold',
-    color: COLORS.text,
-  },
   radioButtonContainer: {
     marginTop: 5,
      marginBottom:10,
@@ -110,6 +134,7 @@ const styles = StyleSheet.create({
   receiptTextRight: {
     fontSize: SIZES.medium,
     color: COLORS.text,
+    fontWeight: 'bold',
   },
   changeButton: {
     alignSelf: 'flex-end',
@@ -117,7 +142,7 @@ const styles = StyleSheet.create({
   },
   changeButtonText: {
     fontSize: SIZES.medium,
-    color: COLORS.textGreen,
+    color: COLORS.themeRed,
   },
   blackBox: {
     flexDirection: 'row',
@@ -126,7 +151,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 20,
     paddingVertical: 16,
-    marginTop: 10,
+    marginTop: 20,
     marginBottom: 20,
   },
   totalTextLeft: {
@@ -139,27 +164,19 @@ const styles = StyleSheet.create({
   },
   termsText: {
     fontSize: SIZES.medium,
-    color: COLORS.themeGreen,
+    color: COLORS.text,
     textAlign: 'center'
   },
   termsLinkText: {
-    color: '#ebb8cb',
+    color: COLORS.themeRed,
   },
   buttonContainer: {
-    backgroundColor: '#27bbb5',
-    borderRadius: 8,
+    backgroundColor: COLORS.themeRed,
+    borderRadius: 15,
     paddingVertical: 16,
     marginTop: 20,
     marginBottom: 20,
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
   },
   buttonText: {
     color: COLORS.white,

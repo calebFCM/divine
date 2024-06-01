@@ -7,10 +7,10 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   headingText: {
-   paddingVertical: 20,
+   paddingVertical: 30,
     fontSize: SIZES.large,
     fontWeight: 'bold',
-    color: COLORS.underline
+    color: COLORS.the
   },
   whiteBox: {
     backgroundColor: COLORS.white,
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     color: COLORS.lightGray,
   },
   buttonContainer: {
-    backgroundColor: COLORS.textGreen,
+    backgroundColor: COLORS.themeRed,
     borderRadius: 8,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   txt: {
    color: COLORS.white,
-   fontSize: SIZES.medium,
+   fontSize: SIZES.large,
    fontWeight: 'bold'
   },
   grayLine: {

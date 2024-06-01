@@ -4,7 +4,6 @@ import { COLORS, FONT, SIZES } from "@/constants";
 const styles = StyleSheet.create({
    formContainer: {
      paddingHorizontal: 20,
-     marginTop: 20,
    },
    inputContainer: {
      borderWidth: 1,
@@ -20,12 +19,11 @@ const styles = StyleSheet.create({
      color: COLORS.text,
    },
    buttonContainer: {
-     backgroundColor: '#27bbb5',
+     backgroundColor: COLORS.themeRed,
      borderRadius: 8,
      paddingVertical: 16,
      marginTop: 10,
-     marginLeft: 20,
-     marginRight: 20,
+     marginHorizontal: 20,
      alignItems: 'center',
      shadowColor: '#000',
      shadowOffset: {

@@ -22,10 +22,8 @@ export default function CreditCardScreen (activeScreen) {
     {/* UserHeader  is the header  with name and phone number bro! */}
     <UserHeader/>
 
-    <ScrollView>
       <ProfileHeading/>
       <CreditCard/>
-    </ScrollView>
     
     <Footer/>
   </View>

@@ -19,7 +19,6 @@ export default function AirtimeScreen (activeScreen) {
 
     <ScrollView>
       <AirtimeTopUp/>
-      <ChooseNumber/>
     </ScrollView>
     
     <Footer/>

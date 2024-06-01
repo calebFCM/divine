@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
       flex: 1,
    },
 
-   gradient: {
+   overlay: {
+      backgroundColor: COLORS.background,
       flex: 1,
    },
    

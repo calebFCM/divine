@@ -9,6 +9,7 @@ import Footer from '@/components/common/footer/Footer';
 import DataTopupSelected from '@/components/home/DataTopUpSelected';
 
 
+
 export default function DataSelectedScreen (activeScreen) {
   return (
   <View style={styles.OtpScreencontainer}>
@@ -16,9 +17,7 @@ export default function DataSelectedScreen (activeScreen) {
     {/* UserHeader  is the header  with name and phone number bro! */}
     <UserHeader/>
 
-    <ScrollView>
       <DataTopupSelected/>
-    </ScrollView>
     
     <Footer/>
   </View>

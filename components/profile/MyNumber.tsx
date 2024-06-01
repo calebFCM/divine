@@ -13,7 +13,7 @@ const MyNumber = () => {
       <Text style={styles.subheading}>Edit my phone number</Text>
       <TextInput
         style={styles.input}
-        placeholder="John@gmail.com"
+        placeholder="071 234 5678"
         placeholderTextColor={COLORS.gray}
         keyboardType="numeric"
       />
@@ -24,7 +24,7 @@ const MyNumber = () => {
 
       
       <TouchableOpacity>
-        <Text style={styles.anotherNumber}>Add another Divine Number</Text>
+        <Text style={styles.anotherNumber}>Add another Digital Mobile Number</Text>
       </TouchableOpacity>
     </View>
   );

@@ -16,10 +16,8 @@ export default function SocialSekectedScreen (activeScreen) {
     {/* UserHeader  is the header  with name and phone number bro! */}
     <UserHeader/>
 
-    <ScrollView>
       <SocialTopUpSelected/>
-    </ScrollView>
-    
+      
     <Footer/>
   </View>
   );

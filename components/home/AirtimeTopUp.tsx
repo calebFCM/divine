@@ -4,6 +4,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'; 
 import styles from '@/components/home/airtimetopup.style';
 import { COLORS, FONT, SIZES } from "@/constants";
+import ChooseNumber from './ChooseNumber';
 
 const AirtimeTopUp = () => {
   const navigation = useNavigation(); 
@@ -20,20 +21,18 @@ const AirtimeTopUp = () => {
       </View>
 
       {/* Amount of Airtime Text */}
-      <Text style={styles.amountHeading}>Amount of airtime to purchase</Text>
+      <Text style={styles.amountHeading}>Who are you buying for?</Text>
+
+
+      {/*Choosing number component*/}
+      <ChooseNumber/>
       
-      {/* Input Field */}
-      <View style={styles.inputContainer}>
-        <Text style={styles.currencySign}>R</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Enter amount"
-          keyboardType="numeric"
-          placeholderTextColor={COLORS.gray}
-        />
-      </View>
-      {/* Instruction Text */}
-      <Text style={styles.instructionText}>The airtime amount must be between R20 and R1000</Text>
+
+      {/* Button */}
+      <TouchableOpacity onPress={() => navigation.navigate('AirtimeAmountScreen')}
+        style={styles.buttonContainer}>
+        <Text style={styles.buttonText}>continue</Text>
+      </TouchableOpacity>
 
     </View>
   );

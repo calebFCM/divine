@@ -6,12 +6,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.white,
     padding: 20,
-    marginTop: 10,
+    marginTop: 30,
     marginBottom: 40,
-    paddingBottom: '35%',
     marginHorizontal: 20,
     borderRadius: 8,
-    shadowColor: COLORS.black,
+    shadowColor: COLORS.text,
     shadowOffset: {
       width: 0,
       height: 2,
@@ -27,7 +26,7 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: SIZES.medium,
-    color: COLORS.lightGray,
+    color: COLORS.gray,
     marginBottom: 10,
   },
   input: {
@@ -59,18 +58,11 @@ const styles = StyleSheet.create({
     color: COLORS.black,
   },
   buttonContainer: {
-    backgroundColor: COLORS.themeGreen,
-    borderRadius: 8,
+    backgroundColor: COLORS.themeRed,
+    borderRadius: 15,
     paddingVertical: 16,
     alignItems: 'center',
-    shadowColor: COLORS.black,
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    marginTop: 10,
   },
   buttonText: {
     color: COLORS.white,

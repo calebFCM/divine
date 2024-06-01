@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
       fontSize: SIZES.medium,
     },
     registerLink: {
-      color: COLORS.textGreen, // Change color
+      color: COLORS.themeRed, // Change color
     },
     registerTextContainer: {
       flexDirection: 'row',
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     optionsText: {
       marginTop: 15,
       textAlign: "center",
-      color: COLORS.gray
+      color: COLORS.text
     }
   });
 

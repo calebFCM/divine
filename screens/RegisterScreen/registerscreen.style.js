@@ -5,10 +5,6 @@ const styles = StyleSheet.create({
    container: {
       flex: 1,
    },
-
-   gradient: {
-      flex: 1,
-   },
    
    logoContainer: {
 
@@ -17,7 +13,10 @@ const styles = StyleSheet.create({
       width: 100, 
       height: 100, 
       aspectRatio: 1, 
-   }
+   },
+  scrollContainer: {
+    flexGrow: 1,
+  },
 });
 
 export default styles;

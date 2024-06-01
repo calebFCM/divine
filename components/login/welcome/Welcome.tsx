@@ -20,7 +20,7 @@ const Welcome = () => {
       </TouchableOpacity>
 
       <Text style={styles.optionsText}>
-        Login with either your cellphone number or user name
+        Login with either your cellphone number or email
       </Text>
     </View>
   );

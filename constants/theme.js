@@ -1,14 +1,16 @@
 const COLORS = {
-  background: "#F9FAFF",
+  background: "#f4f4f4",
   altBG: "#f4f4f4",
 
+  themeRed: '#e81e25',
+  faintRed: '#f5c3c5',
   themeGreen: "#1a9d9b",
   headingGreen: "#aadbda",
   underline: "#3f8280",
   textGreen: "#27bbb5",
   
   gray: "#777777",
-  lightGray: "#c4c6c5",
+  lightGray: "#e2e2e2",
 
   white: "#FFFFFF",
   text: "#000000",

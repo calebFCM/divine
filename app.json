@@ -1,10 +1,12 @@
 {
   "expo": {
-    "name": "divine",
-    "slug": "divine",
+    "name": "digital mobile",
+    "slug": "digital mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "scheme": "myapp",
+    "platforms": ["ios", "android"],
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",

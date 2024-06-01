@@ -4,6 +4,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'; 
 import styles from '@/components/home/socialtopup.style';
 import { COLORS, FONT, SIZES } from "@/constants";
+import ChooseNumber from './ChooseNumber';
 
 const SocialTopUp = () => {
   const navigation = useNavigation(); 
@@ -19,67 +20,17 @@ const SocialTopUp = () => {
         <Text style={styles.headingText}>Social Bundles</Text>
       </View>
 
-      <View style={styles.bundlesTypeContainer}>
-         <Text style={styles.bundlesType}>Weekly {'  '}</Text>
-         <Text style={styles.allBundles}>All bundles (6)</Text>
-      </View>
-      
+      {/* Amount of Airtime Text */}
+      <Text style={styles.amountHeading}>Who are you buying for?</Text>
 
-      {/* Clickable Box */}
-      <TouchableOpacity onPress={() => navigation.navigate('SocialSelectedScreen')}  
-         style={styles.clickableBox}>
-        <View style={styles.greenBox}>
-          <View style={styles.whiteBox}>
-            <Text style={styles.type}>Weekly</Text>
-            <Text style={styles.bigText}>500 MB</Text>
-          </View>
-          <Text style={styles.price}>R37,50</Text>
-        </View>
-      </TouchableOpacity>
-
-      {/* Clickable Box */}
-      <TouchableOpacity onPress={() => navigation.navigate('')}  
-         style={styles.clickableBox}>
-        <View style={styles.greenBox}>
-          <View style={styles.whiteBox}>
-            <Text style={styles.type}>Weekly</Text>
-            <Text style={styles.bigText}>2 GB</Text>
-          </View>
-          <Text style={styles.price}>R70</Text>
-        </View>
-      </TouchableOpacity>
-
-      {/* Clickable Box */}
-      <TouchableOpacity onPress={() => navigation.navigate('')}  
-         style={styles.clickableBox}>
-        <View style={styles.greenBox}>
-          <View style={styles.whiteBox}>
-            <Text style={styles.type}>Weekly</Text>
-            <Text style={styles.bigText}>3 GB</Text>
-          </View>
-          <Text style={styles.price}>R90</Text>
-        </View>
-      </TouchableOpacity>
-      
-      <View style={styles.bundlesTypeContainer}>
-         <Text style={styles.bundlesType}>Monthly {'  '}</Text>
-         <Text style={styles.allBundles}>All bundles (4)</Text>
-      </View>
+      <ChooseNumber/>
 
       
-
-      {/* Clickable Box */}
-      <TouchableOpacity onPress={() => navigation.navigate('')}  
-         style={styles.clickableBox}>
-        <View style={styles.greenBox}>
-          <View style={styles.whiteBox}>
-            <Text style={styles.type}>Monthly</Text>
-            <Text style={styles.bigText}>500 MB</Text>
-          </View>
-          <Text style={styles.price}>R90</Text>
-        </View>
+      {/* Button */}
+      <TouchableOpacity onPress={() => navigation.navigate('SocialBundlesScreen')}
+        style={styles.buttonContainer}>
+        <Text style={styles.buttonText}>continue</Text>
       </TouchableOpacity>
-      
       
     </View>
   );

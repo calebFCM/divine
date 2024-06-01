@@ -5,6 +5,7 @@ import { COLORS, SIZES } from "../../../constants";
 const styles = StyleSheet.create({
 
   signInHeaderContainer: {
+    backgroundColor: COLORS.themeRed,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
@@ -13,8 +14,9 @@ const styles = StyleSheet.create({
   },
 
   headerLogo:{
-    width: 120, // Set the width of the logo
-    height: 60, // Set the height of the logo
+    width: 123, // Set the width of the logo
+    height: 66, // Set the height of the logo
+    marginBottom: 20,
   },
   
   signInHeadingContainer: {

@@ -1,83 +1,65 @@
-import { StyleSheet } from "react-native";
-import { LinearGradient } from 'expo-linear-gradient'
+import { StyleSheet, Dimensions } from "react-native";
 import { COLORS, FONT, SIZES } from "@/constants";
 
+const { width } = Dimensions.get("window");
+const CARD_MARGIN = 10;
+const CARD_COUNT_PER_ROW = 4;
+const CARD_WIDTH = (width - (CARD_MARGIN * (CARD_COUNT_PER_ROW - 1)) - 40) / CARD_COUNT_PER_ROW; // Adjusted to include spacing and card padding
+
 const styles = StyleSheet.create({
-   container: {
-      flex: 1,
-      paddingHorizontal: 20,
-      marginTop: 20,
-    },
-    balanceHeading: {
-      color: COLORS.underline,
-      fontSize: SIZES.xLarge,
-      fontWeight: 'bold', 
-    },
-    balanceCardsContainer: {
-      marginTop: 20,
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    topCards: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      paddingHorizontal: 20,
-    },
-    bottomCards: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      paddingHorizontal: 20,
-    },
-    card: {
-      backgroundColor: COLORS.white,
-      borderRadius: 15,
-      paddingVertical: 15,
-      paddingHorizontal: 15,
-      width: 125,
-      shadowColor: '#000',
-      margin: 10,
-      shadowOffset: {
-        width: 0,
-        height: 2,
-      },
-      shadowOpacity: 0.25,
-      shadowRadius: 3.84,
-      elevation: 5,
-    },
-    icon: {
-      width: 25,
-      height: 25,
-    },
-    smallText: {
-      fontSize: SIZES.xSmall,
-    },
-    largeText: {
-      fontSize: SIZES.medium,
-      fontWeight: 'bold',
-    },
-    balancesButton: {
-      marginTop: 30,
-      marginBottom: 30,
-      backgroundColor: '#27bbb5',
-      paddingVertical: 12,
-      borderRadius: 8,
-      margin: 90,
-      justifyContent: 'center',
-      alignItems: 'center',
-      shadowColor: '#000',
-      shadowOffset: {
-        width: 0,
-        height: 2,
-      },
-      shadowOpacity: 0.25,
-      shadowRadius: 3.84,
-      elevation: 5,
-    },
-    buttonText: {
-      color: 'white',
-      fontSize: SIZES.small,
-    },
+  container: {
+    flex: 1,
+    paddingHorizontal: 20,
+    marginTop: 20,
+  },
+  balanceHeading: {
+    color: COLORS.text,
+    fontSize: SIZES.xLarge,
+    fontWeight: 'bold', 
+  },
+  balanceCardsContainer: {
+    marginTop: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cardsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    marginHorizontal: -CARD_MARGIN, // Adjust for negative margin of individual cards
+  },
+  card: {
+    backgroundColor: COLORS.white,
+    borderRadius: 15,
+    paddingVertical: 15,
+    paddingHorizontal: 15,
+    width: CARD_WIDTH,
+    marginBottom: CARD_MARGIN, // Add margin between cards
+    marginRight: CARD_MARGIN, // Add margin between cards
+    borderWidth: 1,
+    borderColor: COLORS.lightGray, // Add light gray border
+  },
+  smallText: {
+    fontSize: SIZES.medium,
+    fontWeight: 'bold',
+    textAlign: 'center', // Center small text
+  },
+  largeText: {
+    fontSize: SIZES.medium,
+    textAlign: 'center', // Center large text
+  },
+  balancesButton: {
+    backgroundColor: COLORS.themeRed,
+    paddingHorizontal: 20, // Adjust padding horizontally
+    paddingVertical: 15,
+    borderRadius: 15,
+    marginTop: 20, // Adjust margin top
+    alignSelf: 'center', // Center the button horizontally
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: SIZES.small,
+  },
 });
 
 export default styles;

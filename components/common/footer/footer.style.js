@@ -1,30 +1,32 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '@/constants';
+import { COLORS, SIZES } from '@/constants';
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
-    backgroundColor: COLORS.white,
-    borderTopWidth: 1,
-    borderTopColor: COLORS.lightGray,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    paddingVertical: 10,
+    backgroundColor: COLORS.themeRed,
+    borderRadius: 20,
+    paddingBottom: 10,
+    alignItems: 'center',
+    paddingTop: 10,
+    marginHorizontal: 20,
+    height: 60, // Adjust height as needed
+    elevation: 0, // For Android
+    shadowOpacity: 0, // For iOS
+    shadowOffset: { width: 0, height: 0 }, // For iOS
+    shadowRadius: 0, // For iOS
   },
   iconContainer: {
     alignItems: 'center',
   },
-  icon: {
-    color: COLORS.gray,
-  },
   labelText: {
-    color: COLORS.gray,
-  },
-  highlightedIcon: {
-    color: COLORS.themeGreen,
+    color: COLORS.white,
+    fontSize: SIZES.medium,
   },
   highlightedLabel: {
-    color: COLORS.themeGreen,
+    color: COLORS.white,
+    fontSize: SIZES.medium,
+    fontWeight: 'bold',
   },
 });
-
-export default styles;

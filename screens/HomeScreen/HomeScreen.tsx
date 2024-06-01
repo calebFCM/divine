@@ -11,7 +11,7 @@ import Purchases from '@/components/home/Purchases';
 import Footer from '@/components/common/footer/Footer';
 
 
-export default function HomeScreen (activeScreen) {
+export default function HomeScreen () {
   return (
   <View style={styles.OtpScreencontainer}>
     
@@ -19,24 +19,16 @@ export default function HomeScreen (activeScreen) {
     <UserHeader/>
 
     <ScrollView>
-      <LinearGradient
-        colors={['#fbfcfc', '#daf7f5']}
-        style={styles.gradient}>
+      <View style={styles.overlay}>
           
         <Balances/>
-      
-      </LinearGradient>
-      
-      <LinearGradient
-        colors={['#fbfcfc', '#aadbda']}
-        style={styles.gradient}>
           
         <Purchases/>
       
-      </LinearGradient>
+      </View>
 
     </ScrollView>
-    
+
     <Footer/>
   </View>
   );

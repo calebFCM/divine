@@ -17,7 +17,7 @@ const ProfileOptions = () => {
             <Text style={styles.heading}>Email Address</Text>
             <Text style={styles.description}>johndoe@example.com</Text>
           </View>
-          <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
+          <FontAwesome5 name="chevron-right" size={20} color={COLORS.text} />
         </View>
       </TouchableOpacity>
 
@@ -28,7 +28,7 @@ const ProfileOptions = () => {
             <Text style={styles.heading}>Phone Number</Text>
             <Text style={styles.description}>0712345678</Text>
           </View>
-          <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
+          <FontAwesome5 name="chevron-right" size={20} color={COLORS.text} />
         </View>
       </TouchableOpacity>
 
@@ -39,7 +39,7 @@ const ProfileOptions = () => {
             <Text style={styles.heading}>Phone Number List</Text>
             <Text style={styles.description}>Manage your phone numbers</Text>
           </View>
-          <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
+          <FontAwesome5 name="chevron-right" size={20} color={COLORS.text} />
         </View>
       </TouchableOpacity>
 
@@ -50,7 +50,7 @@ const ProfileOptions = () => {
             <Text style={styles.heading}>Password</Text>
             <Text style={styles.description}>xxxxxxxx</Text>
           </View>
-          <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
+          <FontAwesome5 name="chevron-right" size={20} color={COLORS.text} />
         </View>
       </TouchableOpacity>
 
@@ -61,7 +61,7 @@ const ProfileOptions = () => {
             <Text style={styles.heading}>Payment details</Text>
             <Text style={styles.description}>Manage your payment details</Text>
           </View>
-          <FontAwesome5 name="chevron-right" size={20} color={COLORS.textGreen} />
+          <FontAwesome5 name="chevron-right" size={20} color={COLORS.text} />
         </View>
       </TouchableOpacity>
       

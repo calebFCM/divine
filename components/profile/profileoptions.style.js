@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 20,
-    marginTop: 10,
+    marginTop: 30,
     marginBottom: 20,
   },
   optionContainer: {
@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: SIZES.medium,
-    color: COLORS.lightGray,
+    color: COLORS.gray,
+    fontWeight: '200'
   },
 });
 

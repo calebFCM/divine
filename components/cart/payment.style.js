@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 import { COLORS, FONT, SIZES } from "@/constants";
 
 const styles = StyleSheet.create({
-   
   container: {
     paddingHorizontal: 20,
     paddingBottom: 40,
@@ -14,12 +13,12 @@ const styles = StyleSheet.create({
     marginBottom: 13,
   },
   icon: {
-    color: COLORS.underline,
+    color: COLORS.text,
   },
   headingText: {
     fontSize: SIZES.large,
     fontWeight: 'bold',
-    color: COLORS.underline,
+    color: COLORS.text,
     marginLeft: 8,
   },
   whiteBox: {
@@ -27,6 +26,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 20,
     marginTop: 12,
+  },
+  infoIcon: {
+    color: COLORS.themeRed,
+    marginLeft: 10,
   },
   bundleContainer: {
     flexDirection: 'row',
@@ -62,6 +65,20 @@ const styles = StyleSheet.create({
     color: COLORS.black,
     fontWeight: 'bold',
   },
+  radioRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between', // Ensure items are spaced out correctly
+    marginTop: 15,
+  },
+  radioContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  radioLabel: {
+    fontSize: SIZES.medium,
+    marginLeft: 8,
+  },
   blackBox: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -83,8 +100,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   buttonContainer: {
-    backgroundColor: '#27bbb5',
-    borderRadius: 8,
+    backgroundColor: COLORS.themeRed,
+    borderRadius: 15,
     paddingVertical: 16,
     marginTop: 10,
     marginBottom: 20,
@@ -106,4 +123,3 @@ const styles = StyleSheet.create({
 });
 
 export default styles;
-   

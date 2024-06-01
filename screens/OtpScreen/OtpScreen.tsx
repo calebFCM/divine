@@ -12,15 +12,13 @@ import OtpAlert from '@/components/login/otpAlert/OtpAlert';
 export default function OtpScreen () {
   return (
   <View style={styles.OtpScreencontainer}>
-    <LinearGradient
-      colors={['#fbfcfc', '#daf7f5']}
-      style={styles.gradient}>
+    <View style={styles.overlay}>
         
         <SignInHeader/>
         <OtpHeading/>
         <OtpAlert/>
     
-    </LinearGradient>
+    </View>
   </View>
   );
 }

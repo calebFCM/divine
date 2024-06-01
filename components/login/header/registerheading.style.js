@@ -9,9 +9,11 @@ const styles = StyleSheet.create({
    },
 
    otpHeadingText: {
-      fontSize: SIZES.xxLarge,
-      color: COLORS.headingGreen,
+      marginTop: 30,
+      fontSize: SIZES.large,
+      color: COLORS.text,
       fontWeight: "bold",
+      textAlign: 'center',
    },
    
 });

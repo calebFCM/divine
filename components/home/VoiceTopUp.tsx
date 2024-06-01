@@ -4,6 +4,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'; 
 import styles from '@/components/home/voicetopup.style';
 import { COLORS, FONT, SIZES } from "@/constants";
+import ChooseNumber from './ChooseNumber';
 
 const VoiceTopUp = () => {
   const navigation = useNavigation(); 
@@ -19,37 +20,16 @@ const VoiceTopUp = () => {
         <Text style={styles.headingText}>Voice Bundles</Text>
       </View>
 
-      <Text style={styles.allBundles}>All bundles (3)</Text>
+      {/* Amount of Airtime Text */}
+      <Text style={styles.amountHeading}>Who are you buying for?</Text>
 
-      {/* Clickable Box */}
-      <TouchableOpacity onPress={() => navigation.navigate('VoiceSelectedScreen')}  
-         style={styles.clickableBox}>
-        <View style={styles.greenBox}>
-          <View style={styles.whiteBox}>
-            <Text style={styles.bigText}>40 min</Text>
-          </View>
-          <Text style={styles.price}>R22,50</Text>
-        </View>
-      </TouchableOpacity>
+      <ChooseNumber/>
+
       
-      {/* Clickable Box */}
-      <TouchableOpacity style={styles.clickableBox}>
-        <View style={styles.greenBox}>
-          <View style={styles.whiteBox}>
-            <Text style={styles.bigText}>1.2 GB</Text>
-          </View>
-          <Text style={styles.price}>R40</Text>
-        </View>
-      </TouchableOpacity>
-      
-      {/* Clickable Box */}
-      <TouchableOpacity style={styles.clickableBox}>
-        <View style={styles.greenBox}>
-          <View style={styles.whiteBox}>
-            <Text style={styles.bigText}>160 min</Text>
-          </View>
-          <Text style={styles.price}>R80</Text>
-        </View>
+      {/* Button */}
+      <TouchableOpacity onPress={() => navigation.navigate('VoiceBundlesScreen')}
+        style={styles.buttonContainer}>
+        <Text style={styles.buttonText}>continue</Text>
       </TouchableOpacity>
       
     </View>

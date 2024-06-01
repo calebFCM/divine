@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, TextInput  } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'; 
-import styles from '@/components/home/datatopup.style';
+import styles from '@/components/home/socialtopupselected.style';
 import { COLORS, FONT, SIZES } from "@/constants";
 import ChooseNumber from './ChooseNumber';
 
-const DataTopupSelected = () => {
+const SocialTopUpSelected = () => {
   const navigation = useNavigation(); 
   const [selectedOption, setSelectedOption] = useState('myNumber');
 
@@ -21,19 +21,33 @@ const DataTopupSelected = () => {
       </View>
 
       {/* Clickable Box */}
-      <TouchableOpacity style={styles.clickableBox}>
+      <TouchableOpacity onPress={() => navigation.navigate('')}  
+         style={styles.clickableBox}>
         <View style={styles.greenBox}>
           <View style={styles.whiteBox}>
-            <Text style={styles.bigText}>500 GB</Text>
+            <Text style={styles.type}>Weekly</Text>
+            <Text style={styles.bigText}>500 MB</Text>
           </View>
           <Text style={styles.price}>R37,50</Text>
         </View>
       </TouchableOpacity>
 
-      <ChooseNumber/>
-      
+      {/* Additional Text */}
+      <View style={styles.additionalTextContainer}>
+        <Text style={styles.additionalTextLeft}>For number</Text>
+        <Text style={styles.additionalTextRight}>072 345 6789</Text>
+      </View>
+
+      {/* Add to Basket Button */}
+      <TouchableOpacity
+        onPress={() => console.log('Add to basket pressed')}
+        style={styles.buttonContainer}
+      >
+        <Text style={styles.buttonText}>Add to Basket</Text>
+      </TouchableOpacity>
+
     </View>
   );
 };
 
-export default DataTopupSelected;
+export default SocialTopUpSelected;

@@ -1,16 +1,21 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient'
 import { COLORS, FONT, SIZES } from "@/constants";
+
+const { width } = Dimensions.get("window");
+const CARD_MARGIN = 10;
+const CARD_COUNT_PER_ROW = 2;
+const CARD_WIDTH = (width - (CARD_MARGIN * (CARD_COUNT_PER_ROW - 1)) - 70) / CARD_COUNT_PER_ROW;
 
 const styles = StyleSheet.create({
    container: {
       flex: 1,
       paddingHorizontal: 20,
-      marginTop: 20,
+      marginTop: 30,
     },
     purchaseHeading: {
-      color: COLORS.underline,
-      fontSize: SIZES.large,
+      color: COLORS.text,
+      fontSize: SIZES.xLarge,
       fontWeight: 'bold', 
     },
     balanceCardsContainer: {
@@ -22,12 +27,10 @@ const styles = StyleSheet.create({
     topCards: {
       flexDirection: 'row',
       justifyContent: 'space-between',
-      paddingHorizontal: 20,
     },
     bottomCards: {
       flexDirection: 'row',
       justifyContent: 'space-between',
-      paddingHorizontal: 20,
     },
     card: {
       backgroundColor: COLORS.white,
@@ -36,7 +39,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 15,
       width: 115,
       shadowColor: '#000',
-      margin: 10,
+      margin: 7,
       justifyContent: 'center',
       alignItems: 'center',
       shadowOffset: {
@@ -48,8 +51,9 @@ const styles = StyleSheet.create({
       elevation: 5,
     },
     icon: {
-      width: 40,
-      height: 40,
+      resizeMode: 'contain',
+      width: 44,
+      height: 44,
     },
     cardText: {
       fontSize: SIZES.medium,
@@ -75,8 +79,8 @@ const styles = StyleSheet.create({
       elevation: 5,
     },
     rechargeHeading: {
-      color: COLORS.underline,
-      fontSize: SIZES.large,
+      color: COLORS.text,
+      fontSize: SIZES.xLarge,
       fontWeight: 'bold',
       marginTop: 20,
     },
@@ -86,35 +90,16 @@ const styles = StyleSheet.create({
     },
     additionalTextTop: {
       fontSize: SIZES.medium,
-      color: COLORS.gray,
+      color: COLORS.text,
     },
     additionalTextMiddle: {
       fontSize: SIZES.medium,
       color: COLORS.text,
-      color: COLORS.gray,
-    },
-    boldText: {
-      fontWeight: 'bold',
-    },
-    additionalTextBottom: {
-      fontSize: SIZES.medium,
-      color: COLORS.text,
-      color: COLORS.gray,
-      marginTop: 20,
-    },
-    bluBox: {
-      alignItems: 'center',
-      marginTop: 20,
-    },
-    flashBox: {
-      alignItems: 'center',
-      marginTop: 10,
-      marginBottom: 50,
     },
     box: {
-      backgroundColor: COLORS.white,
-      borderRadius: 10,
-      padding: 20,
+      backgroundColor: '#e81393',
+      borderRadius: 7,
+      padding: 11,
       paddingHorizontal: 20,
       shadowColor: '#000',
       shadowOffset: {
@@ -127,20 +112,100 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       alignItems: 'center',
     },
-    boxIcon: {
-      marginRight: 20,
-      width: 40,
-      height: 40,
+    boxImage: {
+      marginRight: 15,
+      resizeMode: 'contain'
+    },
+    bluBanner:{
+      marginLeft: -20,
+      marginVertical: -20,
+      borderRadius: 9,
+      borderBottomRightRadius: 25,
+      width: 130,
+      height: 81,
+    },
+    flashBanner:{ 
+      marginLeft: -20,
+      marginVertical: -20,
+      borderRadius: 9,
+      borderBottomRightRadius: 25,
+      width: 110,
+      height: 81,
     },
     boxContent: {
       flex: 1,
     },
     boxTextTop: {
+      color: COLORS.white,
       fontSize: SIZES.medium,
+      fontWeight: 'bold',
     },
     boxTextBottom: {
       fontSize: SIZES.medium,
+      color: COLORS.white,
+    },
+  
+    // Style for each individual Rica box
+    ricaBoxContainer: {
+      flexDirection: 'row', // Align boxes horizontally
+      justifyContent: 'center', // Align boxes in the center
+      marginTop: 20, // Add some top margin
+      paddingHorizontal: 35, // Add horizontal padding
+    },
+  
+    // Style for each individual Rica box
+    ricaBox: {
+      backgroundColor: COLORS.themeRed, // Background color
+      borderRadius: 10, // Rounded corners
+      padding: 27, // Padding inside the box
+      width: CARD_WIDTH, // Set the width based on calculated value
+      marginBottom: 20, // Add some bottom margin for spacing
+      marginHorizontal: 5,
+      shadowColor: '#000', // Shadow color
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+      elevation: 5, // Shadow properties for Android
+      flexDirection: 'row', // Align text and icon horizontally
+      alignItems: 'center', // Center text and icon vertically
+    },
+  
+    // Style for the text inside the Rica box
+    boxText: {
+      color: COLORS.white, // Text color
+    },
+  
+    // Style for the medium-sized text inside Rica box
+    mediumText: {
+      fontSize: SIZES.medium, // Medium font size
+      fontWeight: 'bold', // Bold font weight
+    },
+  
+    // Style for the xLarge-sized text inside Rica box
+    xLargeText: {
+      fontSize: SIZES.xLarge, // Extra large font size
+      fontWeight: 'bold', // Bold font weight
+      marginTop: -5,
+    },
+    boldText: {
+      fontWeight: 'bold',
+    },
+    additionalTextBottom: {
+      fontSize: SIZES.medium,
       color: COLORS.text,
+      marginTop: 20,
+    },
+    bluBox: {
+      alignItems: 'center',
+      marginTop: 20,
+    },
+    flashBox: {
+      alignItems: 'center',
+      marginTop: 15,
+      marginBottom: 50,
     },
 });
 

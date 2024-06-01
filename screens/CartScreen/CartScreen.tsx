@@ -20,8 +20,6 @@ export default function CartScreen (activeScreen) {
     <ScrollView>
       <ShoppingCart/>
     </ScrollView>
-    
-    <Footer/>
   </View>
   );
 }

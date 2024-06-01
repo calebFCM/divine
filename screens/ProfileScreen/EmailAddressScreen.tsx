@@ -20,10 +20,8 @@ export default function ProfileScreen (activeScreen) {
     {/* UserHeader  is the header  with name and phone number bro! */}
     <UserHeader/>
 
-    <ScrollView>
       <ProfileHeading/>
       <Email/>
-    </ScrollView>
     
     <Footer/>
   </View>

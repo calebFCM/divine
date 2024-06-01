@@ -1,9 +1,11 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import styles from '@/components/login/form/registerform.style';
 
 const RegisterForm = () => {
+   const navigation = useNavigation();
   return (
    
    <View style={styles.formContainer}>
@@ -44,7 +46,8 @@ const RegisterForm = () => {
       </View>
       
       {/* Continue Button */}
-      <TouchableOpacity style={styles.buttonContainer}>
+      <TouchableOpacity onPress={ () => navigation.navigate('LoginScreen')}
+         style={styles.buttonContainer}>
         <Text style={styles.buttonText}>Register</Text>
       </TouchableOpacity>
    </View>

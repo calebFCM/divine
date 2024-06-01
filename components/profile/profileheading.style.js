@@ -7,15 +7,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingVertical: 20,
+    marginTop: 30,
   },
   icon: {
-    color: COLORS.underline,
+    color: COLORS.text,
   },
   headingText: {
     fontSize: SIZES.large,
     fontWeight: 'bold',
-    color: COLORS.underline,
+    color: COLORS.text,
     marginLeft: 8,
   },
    

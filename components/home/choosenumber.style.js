@@ -4,8 +4,6 @@ import { COLORS, FONT, SIZES } from "@/constants";
 const styles = StyleSheet.create({
    
    container: {
-     paddingHorizontal: 20,
-     marginTop: 10,
      paddingBottom: 30,
    },
    inputContainer: {
@@ -39,36 +37,37 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   radioLabel: {
+    marginTop: 5,
     fontSize: SIZES.medium,
+    fontWeight: 'bold',
+     marginLeft: 37
   },
   radioBtns: {
-    flex: 1, 
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
   },
-  buttonContainer: {
-    backgroundColor: '#27bbb5',
+  numbertHeading: {
+    marginTop: 20,
+    fontSize: SIZES.medium,
+    color: COLORS.text,
+  },
+  dropDownContainer: {
+    borderWidth: 1,
+    borderColor: COLORS.lightGray,
     borderRadius: 8,
-    paddingVertical: 16,
-    marginTop: 40,
-    marginLeft: 20,
-    marginRight: 20,
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    marginTop: 10,
+    marginBottom: 20,
+    backgroundColor: COLORS.white,
   },
-  buttonText: {
-    color: COLORS.white,
-    fontSize: SIZES.small,
-    textTransform: 'uppercase'
+  orText: {
+   textAlign: 'center',
+   marginBottom: 0,
+   color: COLORS.gray,
+  },
+  instructionText: {
+    fontSize: SIZES.large,
+    color: COLORS.text,
   },
    
 });
 
 export default styles;
-   
